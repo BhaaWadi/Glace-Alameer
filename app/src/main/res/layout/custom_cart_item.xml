@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/custom_cart_item_iv"
+                android:layout_width="118dp"
+                android:layout_height="111dp"
+                android:layout_margin="8dp"
+                android:padding="2dp"
+                android:src="@drawable/product_img"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/custom_cart_item_tv_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="160dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="8dp"
+                android:text="Ice Cream"
+                android:textColor="@color/textBlue"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.192" />
+
+            <TextView
+                android:id="@+id/custom_cart_item_tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="6"
+                android:textColor="@color/purple_700"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tv_price"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_price"
+                app:layout_constraintTop_toBottomOf="@+id/tv_price"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="165dp"
+                android:layout_weight="0.5"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Price"
+                android:textColor="@color/hintColor"
+                android:textSize="8sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_quantity2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_quantity2"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/tv_total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="64dp"
+                android:layout_weight="0.5"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Total"
+                android:textColor="@color/hintColor"
+                android:textSize="8sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.581" />
+
+            <TextView
+                android:id="@+id/tv_quantity2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Quantity"
+                android:textColor="@color/hintColor"
+                android:textSize="8sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_total"
+                app:layout_constraintEnd_toStartOf="@+id/tv_total"
+                app:layout_constraintStart_toEndOf="@+id/tv_price"
+                app:layout_constraintTop_toTopOf="@+id/tv_total"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/custom_cart_item_tv_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="0.5"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="2"
+                android:textColor="@color/purple_700"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tv_quantity2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_quantity2"
+                app:layout_constraintTop_toBottomOf="@+id/tv_quantity2" />
+
+            <TextView
+                android:id="@+id/custom_cart_item_tv_subTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="12"
+                android:textColor="@color/purple_700"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tv_total"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_total"
+                app:layout_constraintTop_toBottomOf="@+id/tv_total"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <ImageView
+                android:id="@+id/mg_delete"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_delete_"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.166" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

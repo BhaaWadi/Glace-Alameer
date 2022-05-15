@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".Fragment.DialogFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Spinner
+        android:id="@+id/sp_one"
+        android:layout_width="410dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/dataItem"
+        android:minHeight="50dp" />
+
+
+    <Spinner
+        android:id="@+id/sp_two"
+        android:layout_width="410dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/dataItem"
+        android:minHeight="50dp" />
+
+    <Spinner
+        android:id="@+id/sp_three"
+        android:layout_width="410dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/dataItem"
+        android:minHeight="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_4sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialog_connection_canecel"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:drawableEnd="@drawable/ic_israel_shekel_currency_symbol"
+            android:drawablePadding="8dp"
+            android:gravity="end"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="10"
+            android:textColor="@color/purple_500"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingStart="16dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:background="#f4f4f4"
+            android:textSize="24sp"
+            android:hint="Enter Your Address"
+            android:textColorHint="@color/hintColor" />
+
+        <Button
+            android:id="@+id/btn_order"
+            android:text="Order Now"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/details_btn_background"
+            android:textSize="25sp"
+            android:layout_width="400dp"
+            android:layout_height="60dp"/>
+
+
+
+    </LinearLayout>
+</LinearLayout>

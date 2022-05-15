@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="connect">اتصال</string>
+    <string name="Cancel">الغاء</string>
+    <string name="Please_check_your_internet_connection">الرجاء التحقق من اتصال الانترنت الخاص بك</string>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Card_favarity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    android:backgroundTint="#ECEAEA"
+    app:cardCornerRadius="@dimen/_10sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/aaaaaa"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:padding="6dp"
+            android:src="@drawable/product_img"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="@+id/item_favorty_tv_praise"
+            app:layout_constraintStart_toEndOf="@+id/item_favorty_tv_praise"
+            app:layout_constraintTop_toTopOf="@+id/view2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_favorty_tv_name"
+                android:layout_width="178dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="9dp"
+                android:layout_marginTop="22dp"
+                android:gravity="center"
+                android:text="Ice Cream"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/purple_500"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/item_favorty_tv_praise"
+                app:layout_constraintStart_toStartOf="@+id/view2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/item_favorty_tv_praise"
+                android:layout_width="107dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:drawableStart="@drawable/ic_israel_shekel_currency_symbol"
+                android:text="150"
+                android:drawablePadding="10dp"
+                android:textColor="@color/textBlue"
+                android:textSize="@dimen/_22ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/view2"
+                app:layout_constraintTop_toTopOf="@+id/view2" />
+
+            <ImageView
+                android:id="@+id/favoriteImage"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="160dp"
+                app:srcCompat="@drawable/ic_save_on" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+

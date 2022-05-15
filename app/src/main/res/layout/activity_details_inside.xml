@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activites.DetailsInsideActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="367dp"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/wafell"
+                android:layout_width="120dp"
+                android:layout_height="220dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/w_4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/mg_Boll4"
+                android:layout_width="102dp"
+                android:layout_height="91dp"
+                android:layout_marginStart="164dp"
+                android:src="@drawable/balls_4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.242" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/mg_Boll3"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginEnd="188dp"
+                android:src="@drawable/all_balls"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.323" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/mg_Boll2"
+                android:layout_width="94dp"
+                android:layout_height="83dp"
+                android:layout_marginEnd="124dp"
+                android:src="@drawable/balls_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.411" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/mg_Boll1"
+                android:layout_width="126dp"
+                android:layout_height="91dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="144dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/balls_1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.466" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_500"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ice_cream_Type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:text="ٍSmall"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/bolls_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:drawableStart="@drawable/ic_israel_shekel_currency_symbol"
+                android:text="5.5"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="25sp" />
+
+
+            <ImageView
+                android:id="@+id/Favorite"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/ic_save_off" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/Boll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Boll 1"
+            android:layout_marginTop="12dp"
+            android:paddingStart="16dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:background="@color/purple_200"
+            android:textSize="30sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/res_boll_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp" />
+
+        <TextView
+            android:id="@+id/Boll2"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Boll2"
+            android:paddingStart="16dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:background="@color/purple_200"
+            android:textSize="30sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/res_boll_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp" />
+
+
+        <TextView
+            android:id="@+id/Boll3"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Boll3"
+            android:textSize="30sp"
+            android:paddingStart="16dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:background="@color/purple_200"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/res_boll_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp" />
+
+        <TextView
+            android:id="@+id/Boll4"
+            android:paddingStart="16dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:background="@color/purple_200"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Boll4"
+            android:textSize="30sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/res_boll_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="160dp"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/price_detals_background"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.936"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/product_decp" />
+
+                <ImageView
+                android:id="@+id/mg_plus"
+                android:layout_width="28dp"
+                android:layout_height="27dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view5"
+                app:layout_constraintEnd_toEndOf="@+id/view5"
+                app:layout_constraintTop_toTopOf="@+id/view5"
+                app:srcCompat="@drawable/plus" />
+
+            <ImageView
+                android:id="@+id/mg_min"
+                android:layout_width="25dp"
+                android:layout_height="9dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view5"
+                app:layout_constraintStart_toStartOf="@+id/view5"
+                app:layout_constraintTop_toTopOf="@+id/view5"
+                app:srcCompat="@drawable/minus" />
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="46dp"
+                android:layout_height="33dp"
+                android:layout_marginBottom="7dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="1"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view5"
+                app:layout_constraintEnd_toStartOf="@+id/mg_plus"
+                app:layout_constraintStart_toEndOf="@+id/mg_min"
+                app:layout_constraintTop_toTopOf="@+id/view5" />
+
+
+                <Button
+                    android:id="@+id/add_Order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/details_btn_background"
+                    android:text="Add to Order"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

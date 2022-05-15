@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "93618614046",
+    "project_id": "glace-alameer",
+    "storage_bucket": "glace-alameer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93618614046:android:0892361d0ebb264278630f",
+        "android_client_info": {
+          "package_name": "com.example.glacealameer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "93618614046-pr5s711arhc7ifid5er89g2l2k1d948s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFha-N4dilItb-xm6sfXKWq5Y-K1fKQGA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "93618614046-pr5s711arhc7ifid5er89g2l2k1d948s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

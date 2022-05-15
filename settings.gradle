@@ -1,0 +1,2 @@
+rootProject.name = "Glace ALameer"
+include ':app'
